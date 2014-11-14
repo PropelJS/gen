@@ -1,0 +1,37 @@
+{
+  "name": "gen",
+  "version": "1.0.0",
+  "description": "Flow control with generators based on bluebird",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "gulp lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PropelJS/gen.git"
+  },
+  "keywords": [
+    "Generators",
+    "ES6",
+    "Harmony"
+  ],
+  "author": "Joshwa Fugett <jfugett27@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PropelJS/gen/issues"
+  },
+  "homepage": "https://github.com/PropelJS/gen",
+  "dependencies": {
+    "bluebird": "^2.3.11",
+    "sliced": "0.0.5",
+    "thunkify": "^2.1.2"
+  },
+  "devDependencies": {
+    "co": "^3.1.0",
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.0",
+    "jshint-stylish": "^1.0.0",
+    "matcha": "^0.6.0",
+    "mocha": "^2.0.1"
+  }
+}

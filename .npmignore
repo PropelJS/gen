@@ -112,3 +112,15 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+
+## NPM Specific
+docs/
+test/
+.cpd.yml
+.editorconfig
+.jscrc
+.jshintignore
+.jshintrc
+shippable.yml
+todo.md

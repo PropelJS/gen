@@ -1,0 +1,55 @@
+# ensure we have a clean build each time at the cost of speed
+reset_minion: true
+
+#language setting
+language: node_js
+
+node_js:
+  - 0.11
+
+branches:
+  only:
+    - master
+    - alpha
+    - beta
+    - production
+
+# environment variables
+env:
+  global:
+    - NODE_ENV=test
+
+#notifications
+notifications:
+  email:
+    recipients:
+      - jfugett@thotjs.io
+    on_success: change
+    on_failure: always
+
+before_install:
+  npm install -g gulp
+# Any additional requirements would go here
+
+install:
+# Anything besides npm install would go here (npm i is run by default)
+
+before_script:
+# Any additional configuration or commands would go here
+
+script:
+  - gulp build
+
+after_script:
+# Any cleanup or similar code would need to go here
+
+after_success:
+# Deployment hook would go here
+
+after_failure:
+
+before_archive:
+
+after_archive:
+  - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
+  - echo $SHIPPABLE_ARTIFACTS_URL
