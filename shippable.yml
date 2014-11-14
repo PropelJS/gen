@@ -38,7 +38,7 @@ before_script:
 # Any additional configuration or commands would go here
 
 script:
-  - gulp build
+  - gulp lint
 
 after_script:
 # Any cleanup or similar code would need to go here
