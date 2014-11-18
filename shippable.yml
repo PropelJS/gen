@@ -28,8 +28,8 @@ notifications:
     on_failure: always
 
 before_install:
-  npm install -g gulp
-  npm install -g mocha
+  - npm install -g gulp
+  - npm install -g mocha
 # Any additional requirements would go here
 
 install:
