@@ -29,6 +29,7 @@ notifications:
 
 before_install:
   npm install -g gulp
+  npm install -g mocha
 # Any additional requirements would go here
 
 install:
@@ -39,6 +40,7 @@ before_script:
 
 script:
   - gulp lint
+  - mocha -- --harmony
 
 after_script:
 # Any cleanup or similar code would need to go here
